@@ -1,0 +1,11 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+streamlit==1.48.1
+requests==2.32.4
+python-multipart==0.0.20
+spacy==3.8.7
+scikit-learn==1.6.1
+pypdf==5.9.0
+docx2txt==0.9
+boto3==1.39.14
+pydantic==2.11.7
