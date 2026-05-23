@@ -101,13 +101,13 @@ docker run -p 8000:8000 -p 8501:8501 --env-file .env ai-resume-analyzer
    - `80` if you plan to use Nginx
    - `8501` for Streamlit direct access
    - `8000` for FastAPI direct access
-4. SSH into the instance and run [deploy/ec2/bootstrap.sh](/Users/parthibanilango/PycharmProjects/File_Compression_Tool/resume-analyzer/deploy/ec2/bootstrap.sh).
+4. SSH into the instance and run [deploy/ec2/bootstrap.sh](deploy/ec2/bootstrap.sh).
    ```bash
    chmod +x deploy/ec2/bootstrap.sh
    ./deploy/ec2/bootstrap.sh
    ```
 5. Copy the app to `/opt/ai-resume-analyzer` or clone your repository there.
-6. Create `.env` from [deploy/ec2/.env.ec2.example](/Users/parthibanilango/PycharmProjects/File_Compression_Tool/resume-analyzer/deploy/ec2/.env.ec2.example) and update the values.
+6. Create `.env` from [deploy/ec2/.env.ec2.example](deploy/ec2/.env.ec2.example) and update the values.
 7. Start the stack.
    ```bash
    cd /opt/ai-resume-analyzer
@@ -123,7 +123,7 @@ docker run -p 8000:8000 -p 8501:8501 --env-file .env ai-resume-analyzer
 
 ## Optional Nginx Reverse Proxy
 
-If you want to serve the app through port `80`, use [deploy/nginx/resume-analyzer.conf](/Users/parthibanilango/PycharmProjects/File_Compression_Tool/resume-analyzer/deploy/nginx/resume-analyzer.conf).
+If you want to serve the app through port `80`, use [deploy/nginx/resume-analyzer.conf](deploy/nginx/resume-analyzer.conf).
 
 Example on Ubuntu:
 
